@@ -1,4 +1,4 @@
-
+#loading dataset
 ny = read.csv('new_york_city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
@@ -9,7 +9,7 @@ head(wash)
 
 head(chi)
 
-# Your solution code goes here
+#deleting some old comments and loading new
 #loading libraries
 library(dplyr)
 library(plyr)
