@@ -1,4 +1,4 @@
-
+#loading dataset
 ny = read.csv('new_york_city.csv')
 wash = read.csv('washington.csv')
 chi = read.csv('chicago.csv')
@@ -9,7 +9,7 @@ head(wash)
 
 head(chi)
 
-# Your solution code goes here
+#deleting some old comments and loading new
 #loading libraries
 library(dplyr)
 library(plyr)
@@ -107,9 +107,8 @@ wash$month[wash$month %in% old] <-
 
 
 
-
-#solution for question 1
-##visualization
+#deleting this old set and adding new line
+##visualization generating function
 
 rental_user <- function(data,title) {
     ggplot(data = data,
@@ -127,6 +126,7 @@ rental_user <- function(data,title) {
         ) +
         facet_wrap( ~ data$month)
 }
+#visualize
 ## for chi df ,Subscriber rents bike more than Customer and independent.
 rental_user(chi,title="Rental Count compresion for Chicago User Types")
 table(chi$User.Type)
@@ -152,7 +152,7 @@ table(wash$User.Type)
 
 dev.off()
 
-##updating the code with the summary statistics in the 2nd line of the code
+#old line deleted
 ##Summary Statistics:
 #To calculate the rentals per user type of all the cities from the dataset
 #ressources : https://www.tutorialspoint.com/r/r_data_frames.htm
@@ -163,7 +163,7 @@ table(ny$User.Type)
 #Washington
 table(wash$User.Type)
 
-# Your solution code goes here
+# visualization generating function
 hours_ride <- function(data,title) {
     qplot(
         x = data$hour,
