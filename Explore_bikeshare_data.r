@@ -107,9 +107,8 @@ wash$month[wash$month %in% old] <-
 
 
 
-
-#solution for question 1
-##visualization
+#deleting this old set and adding new line
+##visualization generating function
 
 rental_user <- function(data,title) {
     ggplot(data = data,
@@ -127,6 +126,7 @@ rental_user <- function(data,title) {
         ) +
         facet_wrap( ~ data$month)
 }
+#visualize
 ## for chi df ,Subscriber rents bike more than Customer and independent.
 rental_user(chi,title="Rental Count compresion for Chicago User Types")
 table(chi$User.Type)
