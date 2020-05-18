@@ -152,7 +152,7 @@ table(wash$User.Type)
 
 dev.off()
 
-##updating the code with the summary statistics in the 2nd line of the code
+#old line deleted
 ##Summary Statistics:
 #To calculate the rentals per user type of all the cities from the dataset
 #ressources : https://www.tutorialspoint.com/r/r_data_frames.htm
@@ -163,7 +163,7 @@ table(ny$User.Type)
 #Washington
 table(wash$User.Type)
 
-# Your solution code goes here
+# visualization generating function
 hours_ride <- function(data,title) {
     qplot(
         x = data$hour,
