@@ -41,6 +41,10 @@ vignettes/*.pdf
 # DataSets
 *.csv
 
+#html files
+*.html
+
+
 #Jupyter Notebook document
 *.ipynb
 
